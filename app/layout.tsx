@@ -1,5 +1,5 @@
-import './globals.css';
-import { lusitana } from './ui/fonts';
+import '@/app/ui/global.css';
+import { inter } from '@/app/ui/fonts';
 
 export default function RootLayout({
   children,
@@ -7,8 +7,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-  <div className={`${lusitana.className} antialiased`}>
-    {children}
-  </div>
+    <html lang="en">
+      <body className={`${inter.className} antialiased`}>{children}</body>
+    </html>
   );
 }
